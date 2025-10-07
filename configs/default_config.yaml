@@ -1,0 +1,16 @@
+# Default configuration (WIP)
+seed: 42
+device: cuda
+model:
+  d_model: 128
+  num_classes: 7
+  lambda_reg: 0.01
+  forgetting_factor: 0.99
+training:
+  batch_size: 64
+  lr: 1e-3
+  epochs: 50
+data:
+  root: ./data
+  sequence_length: 128
+  features: 128
